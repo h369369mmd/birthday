@@ -311,9 +311,9 @@ border-radius:50px;
 .message{
 
 
-font-size:22px;
+font-size:18px;
 
-line-height:2;
+line-height:1.6;
 
 }
 
@@ -322,15 +322,13 @@ line-height:2;
 .cake{
 
 
-font-size:120px;
+font-size:80px;
 
 
-margin:30px;
+margin:10px;
 
 
-animation:
-
-cakeMove 3s infinite;
+animation:cakeMove 3s infinite;
 
 
 }
