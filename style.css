@@ -13,14 +13,16 @@ body{
     background:
     radial-gradient(circle at top,#ff4fd8,#4b0082,#080018);
 
-    overflow:hidden;
+    overflow-x:hidden;
+overflow-y:auto;
 
     color:white;
 
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
 
+    padding:40px 0;
 }
 
 
@@ -201,7 +203,7 @@ animation:
 
 show 2s ease;
 
-
+margin:40px 0;
 
 }
 
