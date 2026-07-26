@@ -279,3 +279,7 @@ fire.remove();
 // اجرای اولیه آتش بازی
 
 setTimeout(fireworks,2000);
+function playMusic() {
+    const music = document.getElementById("music");
+    music.play();
+}
