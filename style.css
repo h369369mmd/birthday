@@ -1,0 +1,510 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma, sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top,#ff4fd8,#4b0082,#080018);
+
+    overflow:hidden;
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+
+/* ستاره ها */
+
+#stars{
+
+    position:fixed;
+    width:100%;
+    height:100%;
+
+    background-image:
+    radial-gradient(white 2px,transparent 2px);
+
+    background-size:
+    80px 80px;
+
+    animation:
+    starsMove 20s linear infinite;
+
+    opacity:.5;
+
+}
+
+
+
+@keyframes starsMove{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(100px);
+    }
+
+}
+
+
+
+/* بادکنک ها */
+
+.balloon{
+
+    position:fixed;
+
+    bottom:-120px;
+
+    width:70px;
+    height:90px;
+
+    border-radius:50%;
+
+    animation:
+    fly 10s linear infinite;
+
+    opacity:.8;
+
+}
+
+
+
+@keyframes fly{
+
+
+0%{
+
+    transform:
+    translateY(0)
+    rotate(0deg);
+
+}
+
+
+100%{
+
+    transform:
+    translateY(-120vh)
+    rotate(360deg);
+
+}
+
+}
+
+
+
+/* قلب ها */
+
+
+.heart{
+
+position:fixed;
+
+color:#ff77cc;
+
+font-size:30px;
+
+animation:
+heartMove 8s linear infinite;
+
+}
+
+
+
+@keyframes heartMove{
+
+
+0%{
+
+transform:
+translateY(100vh)
+scale(.5);
+
+opacity:0;
+
+}
+
+
+50%{
+
+opacity:1;
+
+}
+
+
+100%{
+
+transform:
+translateY(-100vh)
+scale(1.5);
+
+opacity:0;
+
+}
+
+}
+
+
+
+
+
+.container{
+
+
+width:90%;
+
+max-width:700px;
+
+padding:40px;
+
+text-align:center;
+
+
+background:
+
+rgba(255,255,255,.12);
+
+
+border:
+
+2px solid rgba(255,255,255,.3);
+
+
+border-radius:30px;
+
+
+backdrop-filter:blur(15px);
+
+
+box-shadow:
+
+0 0 40px #ff55cc;
+
+
+
+animation:
+
+show 2s ease;
+
+
+
+}
+
+
+
+@keyframes show{
+
+
+from{
+
+opacity:0;
+
+transform:
+scale(.5);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+scale(1);
+
+}
+
+
+}
+
+
+
+
+h1{
+
+
+font-size:45px;
+
+
+color:#fff;
+
+
+text-shadow:
+
+0 0 15px #ff66dd;
+
+
+animation:
+
+glow 2s infinite alternate;
+
+
+}
+
+
+
+@keyframes glow{
+
+
+from{
+
+text-shadow:
+0 0 10px pink;
+
+}
+
+
+to{
+
+text-shadow:
+0 0 35px white;
+
+}
+
+}
+
+
+
+
+.age{
+
+
+margin:25px;
+
+
+font-size:30px;
+
+
+background:
+
+linear-gradient(
+45deg,
+#ffcc00,
+#ff55dd
+);
+
+
+padding:15px;
+
+border-radius:50px;
+
+
+}
+
+
+
+.message{
+
+
+font-size:22px;
+
+line-height:2;
+
+}
+
+
+
+.cake{
+
+
+font-size:120px;
+
+
+margin:30px;
+
+
+animation:
+
+cakeMove 3s infinite;
+
+
+}
+
+
+
+@keyframes cakeMove{
+
+
+50%{
+
+transform:
+translateY(-20px);
+
+}
+
+}
+
+
+
+
+
+button{
+
+
+padding:
+
+15px 30px;
+
+
+margin:10px;
+
+
+border:none;
+
+
+border-radius:40px;
+
+
+font-size:20px;
+
+
+cursor:pointer;
+
+
+background:
+
+linear-gradient(
+45deg,
+#ff0080,
+#ffcc00
+);
+
+
+color:white;
+
+
+box-shadow:
+
+0 0 20px #ff55cc;
+
+
+transition:.3s;
+
+
+}
+
+
+
+button:hover{
+
+
+transform:
+scale(1.1);
+
+
+}
+
+
+
+
+#gift{
+
+
+margin-top:30px;
+
+
+padding:25px;
+
+
+border-radius:20px;
+
+
+background:
+rgba(0,0,0,.4);
+
+
+font-size:25px;
+
+
+animation:
+
+giftShow 1s;
+
+
+}
+
+
+
+.hidden{
+
+display:none;
+
+}
+
+
+
+@keyframes giftShow{
+
+
+from{
+
+transform:
+scale(0);
+
+}
+
+
+to{
+
+transform:
+scale(1);
+
+}
+
+
+}
+
+
+
+
+
+/* موبایل */
+
+
+@media(max-width:600px){
+
+
+h1{
+
+font-size:32px;
+
+}
+
+
+.message{
+
+font-size:18px;
+
+}
+
+
+.cake{
+
+font-size:80px;
+
+}
+
+
+.container{
+
+padding:25px;
+
+}
+
+
+}
